@@ -104,13 +104,13 @@ body {
 /* media queries */
 @media (max-width: 576px) {
     .header {
-        background-position: 56% 20%;
+        background-position: center;
         height: 80vh;
     }
 
     .header h1 {
         font-size: 4em;
-        margin-right: 15%;
+
         padding-top: 5.5em;
     }
 
@@ -119,20 +119,19 @@ body {
     }
 
     .enterPokemon h1 {
-        margin-right: 2em;
-
+        padding-left: 1em;
+        padding-right: 1em;
         font-size: 2em;
     }
 
     .search {
-        margin-right: 4em;
-        width: 23em;
+        width: 25em;
         height: 3em;
         border: .5mm solid #F0F0F0;
     }
 
     .footer {
-        background-position: 63%;
+        display: none;
     }
 
 }
