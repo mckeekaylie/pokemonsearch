@@ -1,0 +1,138 @@
+body {
+    font-family: Lato;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+.header {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0 0 0;
+    background-image: url(./assets/pokeball.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header h1 {
+    z-index: 2;
+    color: black;
+    text-align: center;
+    font-size: 5em;
+    padding-top: 7.5em;
+    margin: 0;
+}
+
+/* ENTER POKEMON */
+.enterPokemon {
+    position: relative;
+    background-image: url("./assets/enterPokemon.jpg");
+    width: 100%;
+    padding-top: 2em;
+    height: 15em;
+    text-align: center;
+}
+
+.enterPokemon form, .enterPokemon h1 {
+    position: relative;
+    z-index: 2;
+}
+
+.enterPokemon h1 {
+    font-size: 2.5em;
+}
+
+.search {
+    width: 45em;
+    height: 3em;
+    border: .5mm solid #F0F0F0;
+}
+
+.submit {
+    margin-top: .5em;
+    width: 6em;
+    height: 2em;
+    background-color: #FE0000;
+    border: none;
+    color: white;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 5mm;
+}
+
+/* RESULTS */
+.overlay {
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: .9;
+}
+
+#results {
+    text-align: center;
+}
+
+/* RESULTS MOVES */
+#resultsMoves ul {
+    width: 10em;
+    height: 20em;
+    overflow: auto;
+    display: block;
+    margin: auto;
+}
+
+#resultsMovesWrapper {
+    padding-bottom: 4em;
+}
+
+/* FOOTER */
+.footer {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url(./assets/footer.jpeg);
+    background-size: cover;
+}
+
+/* media queries */
+@media (max-width: 576px) {
+    .header {
+        background-position: 56% 20%;
+        height: 80vh;
+    }
+
+    .header h1 {
+        font-size: 4em;
+        margin-right: 15%;
+        padding-top: 5.5em;
+    }
+
+    .enterPokemon {
+        height: 18em;
+    }
+
+    .enterPokemon h1 {
+        margin-right: 2em;
+
+        font-size: 2em;
+    }
+
+    .search {
+        margin-right: 4em;
+        width: 23em;
+        height: 3em;
+        border: .5mm solid #F0F0F0;
+    }
+
+    .footer {
+        background-position: 63%;
+    }
+
+}

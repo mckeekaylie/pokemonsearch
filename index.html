@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Pokémon Search</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' ref='text/css' href='main.css'>
+</head>
+
+<body>
+    <div class = 'header'>
+        <h1>Pokémon Search</h1>
+    </div>
+    
+    <div class = 'enterPokemon'>
+        <h1>Enter the name OR Pokédex # of a Pokémon</h1>
+        <form>
+            <p>
+              <input type='text' id='search' class='search' required>
+            </p>
+            <p>
+              <button class='submit'>Submit</button>
+            </p>
+        </form>
+
+        <div class='overlay'></div>
+    </div>
+
+    <div id = 'results'></div>
+
+    <div id = 'resultsMovesWrapper'>
+        <div id='resultsMoves'>
+            <ul></ul>
+        </div>
+
+    </div>
+
+
+    <div class = 'footer'></div>
+    
+    <script src='pokemon.js'></script>
+
+</body>
+</html>
