@@ -43,7 +43,7 @@ body {
     text-align: center;
 }
 
-.enterPokemon form, .enterPokemon h1 {
+.enterPokemon form, .enterPokemon h1, .enterPokemon p {
     position: relative;
     z-index: 2;
 }
@@ -124,6 +124,7 @@ body {
     }
 
     .enterPokemon {
+        margin-top: 3em;
         height: 18em;
     }
 

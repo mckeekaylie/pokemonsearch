@@ -21,7 +21,7 @@ searchForm.addEventListener('submit', fetchResults);
 function fetchResults(e) {
     e.preventDefault();
 
-    url = baseURL + entry.value +'?limit=980' ;
+    url = baseURL + entry.value. +'?limit=980' ;
 
     fetch(url).then(function(result){
         return result.json();
