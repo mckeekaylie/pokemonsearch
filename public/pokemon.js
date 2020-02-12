@@ -14,14 +14,15 @@ grabMoves.style.display = 'none';
 const grabMovesWrapper = document.querySelector('#resultsMovesWrapper');
 grabMovesWrapper.style.display = 'none';
 
-let entry = document.getElementById('search');
+const entry = document.getElementById('search');
 
 searchForm.addEventListener('submit', fetchResults); 
 
 function fetchResults(e) {
     e.preventDefault();
 
-    url = baseURL + entry.value. +'?limit=980' ;
+    url = baseURL + (entry.value).toLowerCase() + '?limit=980' ;
+    console.log(url);
 
     fetch(url).then(function(result){
         return result.json();
